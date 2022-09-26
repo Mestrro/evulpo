@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>Evulpo Exercise Test</title>
+<meta name="description" content="exercise test full stack developer interview">
+<meta name="keywords" content="single-choice exercise basic-data-connection">
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="big_container">
+		<div id="questions">
+			<button class="slide-arrow" id="slide-arrow-prev">
+				&#8249;
+			</button>
+				
+			<button class="slide-arrow" id="slide-arrow-next">
+				&#8250;
+			</button>
+			<div class="main_question_text">
+				<h2 id="question_text" class="question_text"></h2>
+			</div>
+			<div class="options">
+			<button id="option_0" class="coolButton_blue coolButton" style="display:none"></button>
+			<button id="option_1" class="coolButton_blue coolButton" style="display:none"></button>
+			<button id="option_2" class="coolButton_blue coolButton" style="display:none"></button>
+			<button id="option_3" class="coolButton_blue coolButton" style="display:none"></button>
+			<button id="option_4" class="coolButton_blue coolButton" style="display:none"></button>
+			</div>
+			<div class="evaluation_container">
+				<button id="evaluate" onclick="myEvaluation()" class="coolButton coolButton_yellow evaluate">Evaluate!</button> 
+				<div id="correct" class="scoring_container" style="display:none">
+					<h2 class="question_text correct">Good job! This is the correct answer.</h2>
+					<h2 class="question_text correct">Total points earned:</h2>
+					<h2 id="points_correct" class="question_text points correct"></h2>
+				</div>
+				<div id="wrong" class="scoring_container" style="display:none">
+					<h2 class="question_text wrong">Sorry, wrong answer!</h2>
+					<h2 class="question_text wrong">Total points earned:</h2>
+					<h2 id="points_wrong" class="question_text points wrong"></h2>
+				</div>
+				<button id="next" style="display:none" class="coolButton coolButton_blue">Next question!</button>
+			</div>
+		</div>
+		<div id="final_container" style="display: none" class="final_container">
+			<h2 id="final" class="question_text" ></h2>
+			</h2>
+			<button onclick="tryAgain()" class="coolButton coolButton_yellow evaluate"> Try again? </button>
+		</div>
+	</div>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
